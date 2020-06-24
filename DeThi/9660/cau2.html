@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ngày</title>
+<style type="text/css">
+	body{
+		width: 60%;
+		border: thin solid #000;
+		margin: auto;
+	}
+	.datetime{
+		margin: auto;
+	}
+</style>
+</head>
+<script type="text/javascript">
+	function vavidatetime() {
+		var month = document.getElementById('month').value;
+		var year = document.getElementById('year').value;
+		var days = document.getElementById('days');
+
+		if (month<1||month>12) {
+			days.value = "Một năm chỉ có 12 tháng!";
+		}else{
+			days.value = "";
+		}
+		if (year<0) {
+			days.value = "Có tính được TCN không ta?";
+		}else{
+			days.value = "";
+		}
+		if(/[^0-9]/.test(month)||/[^0-9]/.test(month)){
+			days.value = "Tháng và năm phải là số!";
+		}else{
+			days.value = "";
+		}
+
+		if (month==1 ||month==3 ||month==5 ||month==7 ||month==8 ||month==10 ||month==12) {
+			days.value = "30";
+		}
+		else if (month==4 ||month==6 ||month==9 ||month==11) {
+			days.value = "31";
+		}
+		else if(month==2){
+			if (year%4) {
+				days.value = "28";
+			}
+			else{
+				days.value ="29";
+			}
+
+		}
+	}
+</script>
+<body>
+<div class="datetime">
+	Tháng: <input type="number" id="month" min="1" value="1"> Năm: <input type="number" id="year" value="2019"><br>
+	Số ngày: <input type="text" id="days"><br>
+	<input type="submit" onclick="vavidatetime()" value="Hiển thị số ngày của tháng">
+</div>
+</body>
+</html>

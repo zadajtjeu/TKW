@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gửi đính kèm</title>
+</head>
+<script type="text/javascript">
+	function vavidate() {
+		var title = document.getElementById('title');
+		var to = document.getElementById('to');
+		var attachment = document.getElementById('attachment');
+		var content = document.getElementById('content');
+		
+		if (!title.value)
+			document.getElementById('ctitle').innerHTML = " * Trường này là bắt buộc!";
+		else
+			document.getElementById('ctitle').innerHTML = "";
+		if (!to.value)
+			document.getElementById('cto').innerHTML = " * Trường này là bắt buộc!";
+		else
+			document.getElementById('cto').innerHTML = "";
+		if (!attachment.value)
+			document.getElementById('cattachment').innerHTML = " * Trường này là bắt buộc!";
+		else 
+			if(/[^A-Za-z:\\-]/.test(attachment.value))
+			document.getElementById('cattachment').innerHTML = " * Không hợp lệ!";
+		else
+			document.getElementById('cattachment').innerHTML = "";
+
+		if (!content.value)
+			document.getElementById('ccontent').innerHTML = " * Trường này là bắt buộc!";
+		else
+			document.getElementById('ccontent').innerHTML = "";
+	}
+</script>
+<body style="margin: auto; width: 50%;">
+	<div class="attachment" style="border: thin solid #F00;">
+			<table style="margin: auto;" >
+				<tr>
+					<td><label for="title">Tiêu đề:</label></td>
+					<td><input type="text" name="title" id="title"> <span id="ctitle" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><label for="to">Người nhận:</label></td>
+					<td><input type="text" name="to" id="to"> <span id="cto" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><label for="attachment">File đính kèm:</label></td>
+					<td><input type="text" name="attachment" id="attachment"> <span id="cattachment" style="color: red;"></span></td>
+				</tr>
+				<tr>
+					<td><label for="content">Nội dung:</label></td>
+					<td><textarea name="content" id="content"></textarea> <span id="ccontent" style="color: red;"></span></td>
+				</tr>
+				<tr><td colspan="2" align="center"><input type="submit" name="submit" onclick="vavidate()" value="Gửi đi"><input type="reset" name="clear" value="Hủy bỏ"></td></tr>
+			</table>
+	</div>
+</body>
+</html>

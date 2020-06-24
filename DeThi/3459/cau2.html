@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng ký</title>
+</head>
+<script type="text/javascript">
+	function checkreg() {
+		var user = document.getElementById('user');
+		var pass = document.getElementById('pass');
+		var gt1 = document.getElementById('gt1');
+		var gt2 = document.getElementById('gt2');
+		var dt = document.getElementById('dt');
+		var info = document.getElementById('info');
+		var user = document.getElementById('user');
+
+		if(!user.value)
+			document.getElementById('cuser').innerHTML = "* Trường này là bắt buộc";
+		if(!pass.value)
+			document.getElementById('cpass').innerHTML = "* Trường này là bắt buộc";
+		if(!gt1.value || !gt2.value)
+			document.getElementById('cgt').innerHTML = "* Trường này là bắt buộc";
+		if(!dt.value)
+			document.getElementById('cdt').innerHTML = "* Trường này là bắt buộc";
+		else if(/[^0-9]/.test(dt.value))
+			alert('Số điện thoại của bạn không đúng định dạng!');
+		if(!info.value)
+			document.getElementById('cinfo').innerHTML = "* Trường này là bắt buộc";
+	}
+</script>
+<body>
+	<div class="reg" style="width: 600px; margin: auto; padding: 20px; border: thin solid #000;">
+		<h1 align="center">ĐĂNG KÝ THÔNG TIN</h1>
+		<table>
+			<tr>
+				<td>Tên đăng nhập</td>
+				<td><input type="text" name="user" id="user"> <span style="color: red" id="cuser"></span></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" name="pass" id="pass"> <span style="color: red" id="cpass"></span></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td><input type="radio" name="gt" value="nam" checked id="gt1"> Nam <input type="radio" name="gt" value="nu" id="gt2"> Nữ <span style="color: red" id="cgt"></span></td>
+			</tr>
+			<tr>
+				<td>Số điện thoại</td>
+				<td><input type="text" name="dt" id="dt"> <span style="color: red" id="cdt"></span></td>
+			</tr>
+			<tr>
+				<td>Giới thiệu</td>
+				<td><textarea name="info" id="info"></textarea> <span style="color: red" id="cinfo"></span></td>
+			</tr>
+		</table>
+		<div align="center"><input onclick="checkreg()" type="submit" name="submit" value="Đăng ký"> <input type="reset" name="reset" value="Hủy bỏ"></div>
+	</div>
+</body>
+</html>

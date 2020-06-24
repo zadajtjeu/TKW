@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 80%;
+	max-width: 10000px;
+	margin: auto;
+	background: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+header{
+	width: 100%;
+	height: auto;
+}
+.banner{
+	width: 100%;
+	height: 140px;
+	background: url(../images/banner-finnal.png) center/100% 100% no-repeat;
+}
+
+#mainMenu{
+	width: 100%;
+	height: 36px;
+	background: #FF6600;
+	display: block;
+}
+#mainMenu>ul{
+	width: 100%;
+	list-style-type: none;
+}
+#mainMenu>ul>li{
+	display: inline;
+	position: relative;
+	display: inline-table;
+}
+#mainMenu>ul>li>a{
+	font-weight: bold;
+	color: #FFF;
+	padding: 0 36px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background: #FF6600;
+	height: 36px;
+	line-height: 36px;
+	border-left: thin solid #FF9900;
+}
+#mainMenu>ul>li>a:hover{
+	color: red;
+	background: #FF9933;
+}
+
+#mainMenu>ul>li>ul{
+	position: absolute;	
+	margin: auto;
+	display: none;
+}
+#mainMenu>ul>li>ul>li{
+	list-style-type: none;
+	background: #FF9933;
+}
+#mainMenu>ul>li>ul>li>a{
+	color: #FFF;
+	padding: 0 36px;
+	text-decoration: none;
+	display: block;
+	background: #FF9933;
+	height: 36px;
+	line-height: 36px;
+	width: 220px;
+	border: 
+}
+#mainMenu>ul>li>ul>li>a:hover{
+	background: #DD5500;
+}
+
+#mainMenu>ul>li:hover >ul{
+	display: block;
+}
+
+#leftcontainer{
+	width: 20%;
+	float: left;
+	margin: 5px 0;
+}
+
+#mainContent{
+	width: 80%;
+	float: right;
+}
+#mainContent #content{
+	width: 75%;
+	float: left;
+}
+#mainContent #sidebar{
+	width: 25%;
+	float: right;
+}
+.phdr{
+	width: 100%;
+	background: #FF6600;
+	font-family: Tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 10px 10px 0 0;
+}
+
+.menuleft
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #FFBB8E;
+	background: #FFF;
+	border-radius: 0 0 5px 5px;
+}
+.menuleft>ul>li:last-child{
+	padding-bottom: 1px;
+}
+.menuleft>ul{
+	list-style-type: none;
+	width: 100%;
+}
+.menuleft>ul>li{
+	width: 100%;
+	display: table;
+	position: relative;
+}
+.menuleft>ul>li:hover a{
+	background: #FFCCCC;
+}
+.menuleft>ul>li>a{
+	color: #330066;
+	padding: 0 5px;
+	text-decoration: none;
+	display: block;
+	background: #66FFCC;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: thin solid #FFBB8E;
+}
+.menuleft>ul>li>ul{
+	width: 100%;
+	display: none;
+	left: 100%;
+	top:0;
+	position: absolute;
+}
+.menuleft>ul>li>ul>li{
+	background: #FFCCCC;
+	list-style-type: none;
+}
+.menuleft>ul>li>ul>li>a{
+	color: #330066;
+	padding: 0 5px;
+	text-decoration: none;
+	display: block;
+	background: #66FFCC;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: thin solid #FFBB8E;
+}
+.menuleft>ul>li>ul>li>a:hover{
+	color: #FFF;
+}
+.menuleft>ul>li:hover ul{
+	display: block;
+}
+
+
+.noibat{
+	float: left;
+	margin: 0;
+	padding: 2px;
+	text-align: left;
+	max-height: 100px;
+	background: #FFF;
+	border-bottom: thin solid #FF6600;
+}
+.noibat a{
+	font-size: 11px;
+	line-height: 0;
+	text-transform: none;
+}
+.noibat a img{
+	float:  left;
+}
+
+#content{
+	padding: 5px;
+}
+.headcontent{
+	width: 100%;
+	background: #FF6600;
+	font-family: Tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 20px;
+}
+
+.bodycontent{
+	border: 1px solid #FFBB8E;
+	padding: 10px 5px 10px 5px;
+	text-align: left;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.grid{
+	width: 30%;
+	height: auto;
+	margin-left: 12px;
+	padding-right: 6px;
+	margin-bottom: 12px;
+	float: left;
+	text-align: center;
+}
+
+.grid .div_img {
+	width: 176px;
+	height: 160px;
+	border: 1px solid #BCBCBC;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.grid .div_img img {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 150px;
+    max-height: 140px;
+}
+.gia {
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Red;
+}
+.grid .dathang {
+    float: none;
+    width: auto;
+    margin: 0 auto;
+    margin-left: 10px;
+}

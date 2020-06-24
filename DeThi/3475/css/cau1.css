@@ -1,0 +1,215 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {text-decoration: none;}
+body{
+	width: 80%;
+	max-width: 10000px;
+	margin: auto;
+	background: #FFF;
+	font: 16px #000066;
+	border: thin dashed #F0F;
+}
+
+#banner{
+	width: 100%;
+	height: 130px;
+	background: url(../images/banner.png) center/100% 100% no-repeat;
+}
+#mainMenu{
+	width: 100%;
+	height: 36px;
+	display: block;
+
+}
+#mainMenu>ul{
+	width: 100%;
+	list-style-type: none;
+	background: #FFCCFF;
+}
+#mainMenu>ul>li{
+	display: inline-table;
+	position: relative;
+	background: #FFCCFF;
+	height: 36px;
+	width: 12%;
+	text-align: center;
+	border-left: thin solid #FF9900;
+}
+#mainMenu>ul>li:hover ul{
+	display: block;
+}
+#mainMenu>ul>li>a{
+	color: #000066;
+	display: block;
+	text-decoration: none;
+	height: 36px;
+	line-height: 36px;
+
+}
+#mainMenu>ul>li:hover{
+	background: #66FFFF;
+}
+
+#mainMenu>ul>li>ul{
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	background: #FFCCFF;
+}
+#mainMenu>ul>li>ul>li{
+	display: block;
+	background: #FFCCFF;
+	height: 36px;
+	width: 150px;
+	text-align: center;
+	border-left: thin solid #FF9900;
+}
+#mainMenu>ul>li>ul>li:hover{
+	background: #66FFFF;
+}
+#mainMenu>ul>li>ul>li>a{
+	color: #000066;
+	display: block;
+	text-decoration: none;
+	height: 36px;
+	line-height: 36px;
+}
+
+#Container{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+#content1{
+	float: left;
+	width: 60%;
+	padding: 20px 0;
+}
+#content2{
+	float: left;
+	width: 15%;
+	padding: 20px 0;
+}
+
+#slidebar{
+	float: right;
+	width: 25%;
+	padding: 20px 0;
+}
+
+
+#featured {
+    margin: 0 0 20px 0;
+    padding-right: 250px;
+    position: relative;
+    background: #fff;
+}
+#featured ul.ui-tabs-nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#featured ul.ui-tabs-nav li {
+    padding: 0 0 10px 13px;
+    clear: both;
+    line-height: 1.5;
+    cursor: pointer;
+}
+#featured li.ui-tabs-nav-item a {
+    display: block;
+    line-height: 16px;
+    outline: none;
+}
+#featured ul.ui-tabs-nav li img {
+    float: left;
+    margin: 3px 5px;
+    background: #fff;
+    padding: 2px;
+    border: 1px solid #eee;
+    height: 68px;
+    width: 80px;
+}
+
+#featured .ui-tabs-panel {
+    width: 320px;
+    height: 400px;
+    background: #999;
+    position: relative;
+    box-shadow: 0 0 10px #ccc;
+}
+#featured .ui-tabs-panel .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background: url(https://web.archive.org/web/20130911132438im_/http://kientrucnhapho.com.vn/wp-content/themes/twentytwelve/images/transparent-bg.png) repeat;
+    background: #fff;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+#featured .info h2 {
+    color: #d63332;
+    padding: 5px;
+    margin: 0;
+    font-weight: normal;
+    overflow: hidden;
+}
+#featured .info p {
+    margin: 0 5px;
+    line-height: 15px;
+}
+
+
+
+
+footer{
+	width: 100%;
+	background: #F0F;
+	height: 36px;
+	line-height: 36px;
+	padding:  0 10px;
+}
+.searchbox input[type=text] {
+  padding: 7px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.searchbox button {
+  float: left;
+  width: 20%;
+  padding: 7px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.searchbox button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+.searchbox::after {
+  content: "";
+  clear: both;
+  display: table;
+}

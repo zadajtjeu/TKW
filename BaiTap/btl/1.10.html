@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Ngang</title>
+
+<style type="text/css">
+	#menu ul{
+		background-color: blue;
+		list-style-type: none;
+		width: 250px;
+		padding: 0;
+		text-align: center;
+	}
+	#menu ul li{
+		width: auto;
+		height: 40px;
+		line-height: 40px;
+		border-bottom: 1px solid #e8e8e8;
+		padding: 0;
+		position: relative;
+
+	}
+	#menu ul li a{
+		text-decoration: none;
+		color: white;
+		display: block;
+	}
+	#menu ul li a:hover{
+		background-color: red;
+	}
+	#menu ul li ul.sublist{
+		display: none;
+		position: absolute;
+		left: 250px;
+		top: 0;
+	}
+	#menu ul li:hover .sublist{
+		display: block;
+	}
+	#menu ul li .sublist li a{
+		background-color: red;
+	}
+</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="chinh-tri.html">Chính trị xã hội</a>
+				<ul class="sublist">
+					<li><a href="#">Thư viện pháp luật</a></li>
+					<li><a href="#">Sống khỏe</a></li>
+					<li><a href="#">Pháp luật</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="the-gioi.html">Thế giới</a>
+				<ul class="sublist">
+					<li><a href="#">Thư viện pháp luật</a></li>
+					<li><a href="#">Sống khỏe</a></li>
+					<li><a href="#">Pháp luật</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="nhip-song-tre.html">Nhịp sống trẻ</a>
+				<ul class="sublist">
+					<li><a href="#">Thư viện pháp luật</a></li>
+					<li><a href="#">Sống khỏe</a></li>
+					<li><a href="#">Pháp luật</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="giao-duc.html">Giáo dục</a>
+				<ul class="sublist">
+					<li><a href="#">Thư viện pháp luật</a></li>
+					<li><a href="#">Sống khỏe</a></li>
+					<li><a href="#">Pháp luật</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="kinh-te.html">Kinh tế</a>
+				<ul class="sublist">
+					<li><a href="#">Thư viện pháp luật</a></li>
+					<li><a href="#">Sống khỏe</a></li>
+					<li><a href="#">Pháp luật</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

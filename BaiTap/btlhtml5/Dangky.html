@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop thiên thanh - Trang chủ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/Thuvien.js"></script>
+</head>
+<body> 
+	<!-- start header --> 
+	<header> 
+		<h1 class="title">Shop Thiên Thanh</h1>
+		<div class="subtitle">Thời trang nam nữ</div>
+	</header> 
+	<!-- end header --> 
+	<!-- start menu --> 
+	<section id="menuContaniner"> 
+		<div id="menu" > 
+			<div class="menu_left"> </div> 
+			<nav class="menu_bg" > 
+				<ul id="mainMenu"> 
+					<li><a href="TrangChu.html" >Trang chủ</a></li> 
+					<li><a href="#" >Quần áo nữ</a></li> 
+					<li><a href="#" >Quần áo nam</a></li> 
+					<li><a href="#" >Phụ kiện</a></li> 
+					<li><a href="#" >Tin tức sự kiện</a></li>  
+				</ul> 
+			</nav> 
+			<div class="menu_right"> </div> 
+		</div> 
+	</section> 
+	<!-- end menu --> 
+
+	<!-- start content Page --> 
+	<section id="mainContainer">
+		<aside id="sidebar1"> 
+			<div class="subsibar">
+				<div class="bar_title">Sản phẩm mới</div>
+				<div class="subsidecontent">
+					<ul>
+						<li><a href="#"> Áo ba lỗ dễ thương lắm đây</a></li>
+						<li><a href="#"> Áo nơ xinh form dài</a></li>
+						<li><a href="#"> Áo kiểu set đôi</a></li>
+						<li><a href="#"> Chân váy kẻ sọc</a></li>
+						<li><a href="#"> Đầm ống phong cách Q-Ling</a></li>
+						<li><a href="#"> Áo sơ mi nam viền</a></li>
+						<li><a href="#"> Sơ mi phong cách Anh</a></li>
+						<li><a href="#"> Quẩn sort cute Men</a></li>
+						<li><a href="#"> Quần kaki phong cách Men</a></li>
+						<li><a href="#"> Kính mắt Trisha jewelry</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="subsibar" style="border: 1px solid #8C0209; border-radius: 31px 0 0 0;">
+				<div class="bar_title">Hỗ trợ trực tuyến</div>
+				<div class="subsidecontent" align="center">
+					<img style="width: 50%; height: 50%;" src="images/Yahoo-Messenger-logo.png">
+					<br><img style="width: 30%; height: 30%;" src="images/Skype-Green.png">
+					<br>Hotline: <strong>0914 024 357</strong>
+				</div>
+			</div>
+			<div class="subsibar" style="border: 1px solid #8C0209; border-radius: 31px 0 0 0;">
+				<div class="bar_title">Thống kê</div>
+				<div class="subsidecontent" align="center">
+					Số người online: <strong>1000</strong>
+					<br>Số người truy cập: <strong>100000</strong>
+				</div>
+			</div>
+		</aside> 
+
+		<!-- start content --> 
+		<section id="maincontent"> 
+			<div id="Register">
+				<h3 class="title_form">Đăng ký thành viên mới</h3>
+				<hr style="border-top: 1px dashed red;">
+				<div class="formTable">
+					<form action="" method="POST">
+						<table align="center">
+							<tr>
+								<td class="formLabel"><label for="username">Tên đăng nhập:</label></td>
+								<td><input id="username" type="text" name="username" required><span style="color: red;" id="logusername"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="password">Mật khẩu:</label></td>
+								<td><input id="password" type="password" name="password" required><span style="color: red" id="logpass"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="repass">Nhập lại mật khẩu:</label></td>
+								<td><input id="repass" type="password" name="repass" required><span style="color: red" id="logrepass"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="name">Họ và tên:</label></td>
+								<td><input id="name" type="text" name="name" required><span style="color: red" id="logname"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="gender">Giới tính:</label></td>
+								<td><input id="gender" type="radio" name="gender" value="Nam" checked> Nam <input id="gender" type="radio" name="gender" value="Nữ" checked> Nữ<span style="color: red" id="loggender"></span>
+								</td>
+							<tr>
+								<td class="formLabel"><label for="birthday">Ngày sinh:</label></td>
+								<td><input id="birthday" type="date" name="birthday" required><span style="color: red" id="logdate"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="jobs">Nghề nghiệp:</label></td>
+								<td><select id ="jobs" name="jobs">
+									<option value="Công nhân viên chức">Công nhân viên chức</option>
+									<option value="Công nhân">Công nhân</option>
+									<option value="Nông dân">Nông dân</option>
+									<option value="Học sinh">Học sinh</option>
+								</select><span style="color: red" id="logjob"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="mail">Email:</label></td>
+								<td><input id="mail" type="email" name="mail" required><span style="color: red" id="logmail"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="phone">Điện thoại:</label></td>
+								<td><input id="phone" type="number" name="phone" required><span style="color: red" id="logphone"></span></td>
+							</tr>
+							<tr>
+								<td class="formLabel"><label for="note">Ghi chú:</label></td>
+								<td><textarea name="note" id="note" rows="4"></textarea></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center"><input id="submitReg" type="submit" onclick=" document.getElementById('confirm').innerHTML = xlDangky(); return false;" name="submitReg" value="Đăng ký"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="confirm"></div>
+			</div>
+		</section> 
+		<!-- end content --> 
+
+		<aside id="sidebar2"> 
+			<div class="subsibar" style="border: 1px solid #8C0209; border-radius: 31px 0 0 0;">
+				<div class="bar_title">Giỏ hàng</div>
+				<div class="subsidecontent" align="center">
+					Số lượng: <strong>5</strong>
+					<br>Trị giá: <strong>5,300,000</strong> VNĐ
+				</div>
+			</div>
+			<article class="subsibar">
+				<div class="bar_title">Sản phẩm mới</div>
+				<div class="subsidecontent">
+					<ul>
+						<li align="center">
+							<a align="justify-all" href="#"> 9 kiểu áo khoác lên ngôi mùa đông 2013</a>
+							<img style="width: 100%; height: 100%;" src="images/news/1.jpg">
+						</li>
+						<li align="center">
+							<a align="justify-all" href="#"> 10 xu hướng thời trang hot nhất thu đông 2013</a>
+							<img style="width: 100%; height: 100%;" src="images/news/2.jpg">
+						</li>
+						<li align="center">
+							<a align="justify-all" href="#"> 10 set đồ khiến chị em công sở "thèm" mua</a>
+							<img style="width: 100%; height: 100%;" src="images/news/3.jpg">
+						</li>
+						<li align="center">
+							<a align="justify-all" href="#"> Mix đồ đẹp thu đông 2013</a>
+							<img style="width: 100%; height: 100%;" src="images/news/4.jpg">
+						</li>
+						<li align="center">
+							<a align="justify-all" href="#"> Thu này, đừng lãng quên kẻ</a>
+							<img style="width: 100%; height: 100%;" src="images/news/5.jpg">
+						</li>
+					</ul>
+				</div>
+			</article>
+			</div>
+		</aside> 
+	</section> 
+	<!-- end page --> 
+
+	<footer id="footer" > 
+		&copy;2014 All Rights Reserved -  Design by Alphatek Company 
+	</footer> 
+</body>
+</html>
